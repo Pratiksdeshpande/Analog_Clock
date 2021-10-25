@@ -67,6 +67,8 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(245, 241, 30);
+    padding: 0px 10px;
 }
 button{
     margin: 5px 10px;

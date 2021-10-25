@@ -4,7 +4,7 @@ setInterval(() => {
     mtime = d.getMinutes();
     stime = d.getSeconds();
     
-    document.getElementById('hr').innerHTML = "<h3>Current Time: </h3> "+ htime + " Hrs " + mtime+" Min "+ stime+" Sec";
+    document.getElementById('hr').innerHTML = htime + " Hrs " + mtime+" Min "+ stime+" Sec";
 
 
     hrotation = (30*htime) + (mtime/2);
@@ -15,10 +15,12 @@ setInterval(() => {
     minute.style.transform = `rotate(${mrotation}deg)`;
     second.style.transform = `rotate(${srotation}deg)`;
 }, 1000);
+
 d = new Date();
 date = d.getDate();
 month = d.getMonth();
 year = d.getYear();
+
 
 
         
