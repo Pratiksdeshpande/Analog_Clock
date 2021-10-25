@@ -1,19 +1,22 @@
 body{
     margin: 1px;
     padding: 1px;
+    /* z-index: -1; */
+    /* background-image: url(/Assets/calm-body-of-water-1363876.jpg); */
 }
 body img{
     position:fixed;
     width :100%;
     height:100%;
+    z-index: -1;
 }
 #clock_container{
     position: relative;
 
     background-image: url(/Assets/Clock.png);
     background-size: 100%;
-    width: 40vw;
-    height: 40vw;    
+    width: 33vw;
+    height: 33vw;    
     margin: 10px auto;
 }
 #hour, #minute, #second{
@@ -42,3 +45,38 @@ body img{
     left: 50.05%;
     background:rgb(0, 0, 0);
     }
+/* CSS for Digital clock */
+#digital_clock{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 183, 169);
+}
+h3{
+    color: aqua;
+}
+#Todays_Date{
+    color: rgb(245, 241, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px; 
+}
+#hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 5px 10px;
+    padding: 5px;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 6px 2px rgb(133, 126, 126);
+}
