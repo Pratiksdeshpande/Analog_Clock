@@ -10,13 +10,16 @@ body img{
     height:100%;
     z-index: -1;
 }
+
+/* css for Analog Clock */
+
 #clock_container{
     position: relative;
 
     background-image: url(/Assets/Clock.png);
     background-size: 100%;
-    width: 33vw;
-    height: 33vw;    
+    width: 30vw;
+    height: 30vw;    
     margin: 10px auto;
 }
 #hour, #minute, #second{
@@ -44,18 +47,10 @@ body img{
     top: 10.3%;
     left: 50.05%;
     background:rgb(0, 0, 0);
-    }
-/* CSS for Digital clock */
-#digital_clock{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(184, 183, 169);
 }
-h3{
-    color: aqua;
-}
+
+/* CSS for todays date */
+
 #Todays_Date{
     color: rgb(245, 241, 30);
     display: flex;
@@ -63,16 +58,27 @@ h3{
     align-items: center;
     margin: 2px; 
 }
-#hr{
+h3{
+    color: aqua;
+
+}
+
+/* CSS for digital_clock*/
+
+#digital_clock{
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(184, 183, 169);
+}
+#hr{
+
     color: rgb(245, 241, 30);
-    padding: 0px 10px;
+    padding: 10px;
+    margin: auto 2px;
 }
 button{
-    margin: 5px 10px;
-    padding: 5px;
     background: #000;
     color: white;
     cursor: pointer;

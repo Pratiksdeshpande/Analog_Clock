@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/index.js"></script>
     <title>Clock</title>
     <link rel="stylesheet" href="/index.css">
+
 </head>
+
 <body>
-    <img src="/Assets/calm-body-of-water-1363876.jpg" alt="1" > 
+    <img src="/Assets/calm-body-of-water-1363876.jpg" alt="1">
 
     <div id="clock_container">
         <div id="hour"></div>
@@ -18,18 +20,18 @@
     </div>
 
     <div id="Todays_Date">
-        <h3 style="padding: 0px 10px;">Today's Date (DD-MM-YYYY): </h3>
-        <script>
-            document.write(date+"-"+month+"-"+year);
-        </script>
     </div>
+
     <div id="digital_clock">
-        <br><br>
-        <h3>Current Time: </h3>
+        <h3 id="try">Current Time: </h3>
         <div id="hr"></div>
-        <div id="switch_format">
-            <button>Switch Format</button>
-        </div>
+
+        <button type="button" id="twentyfour" class="switch" onclick="switchformat(this.id);">24 Hrs</button>
+        <button type="button" id="tweleve" class="switch" onclick="switchformat(this.id);">12 Hrs</button>
     </div>
+
+
+    <script src="/index.js"></script>
 </body>
+
 </html>
